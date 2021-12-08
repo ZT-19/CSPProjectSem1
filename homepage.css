@@ -1,0 +1,146 @@
+/* main components */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+/* main components*/
+:root {
+--bodyfont: 'Montserrat';
+--fontsize: 1rem;
+--maincolor: #ffeddf; 
+--secondcolor: #AD343E;
+--thirdcolor: #01295f;
+}
+
+
+
+/*loading code*/
+
+@keyframes fakeloadinganimation{
+  0%{
+    width: 0px;
+    top: calc(50vh - 50px);
+    content: "Loading... please wait";
+    transition: ease;
+    text-align: left;
+  }
+  75%{
+    width: 300px;
+    top: calc(50vh - 50px);
+    content: "Loading... please wait";
+    text-align: center;
+  }
+  75.1%{
+    width: 300px;
+    top: calc(50vh - 50px);
+    content: "Done!";
+    text-align: center;
+  }
+  85%{
+    top: calc(50vh - 100px);
+    width: 300px;
+    content: "Done!";
+    text-align: center;
+  }
+  100%{
+    top: calc(150vh - 50px);
+    width: 300px;
+    content: "Done!";
+    text-align: center;
+  }
+}
+html::before{
+  content: "Loading... please wait";
+  height: 100px;
+  position: fixed !important;
+  margin: 0px;
+  padding: 0px;
+  top: calc(150vh - 50px);
+  left: calc(50vw - 150px);
+  background-color: #ffeddf;
+  color: #ffeddf !important;
+  line-height: 100px;
+  white-space: nowrap;
+  font-size: 30px !important;
+  z-index: 1000000000 !important;
+  animation: fakeloadinganimation 2s ease !important;
+  width: 300px !important;
+  box-shadow: 0px 0px 0px 5px white, 0px 50vw 0px calc(50vw + 50vh - 50px) #AD343E, 0px 0px 0px 5px white !important; 
+  display: block !important;
+}
+html::after{
+  content: "Loading... please wait";
+  height: 100px;
+  width: 0px;
+  position: fixed !important;
+  margin: 0px;
+  padding: 0px;
+    top: calc(150vh - 50px);
+  left: calc(50vw - 150px);
+  background-color: #ffeddf;
+  color:#01295f !important;
+  line-height: 100px;
+  z-index: 1000000001 !important;
+  white-space: nowrap;
+  font-size: 30px !important;
+  animation: fakeloadinganimation 2s ease !important;
+  overflow: hidden !important;
+}
+
+/*main page*/
+body {
+background-color: var(--maincolor)
+}
+ 
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+font-family: var(--bodyfont) }
+ 
+/* REMOVE ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+ 
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: blue }
+a:visited {
+  color: purple }*/
+address {
+  margin-bottom: 10em;
+  padding-top: 1em;
+  border-top: thin dotted
+}
+ 
+.btn-group button {
+  background-color: #B22222; /* Green background */
+  border: 1px solid red; /* Green border */
+  color: var(--thirdcolor); /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font: var(--bodyfont);
+}
+ 
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+ 
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #a54d41;
+  transition-delay: 0.1s;
+}

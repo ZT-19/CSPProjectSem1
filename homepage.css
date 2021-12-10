@@ -91,18 +91,19 @@ html::after{
 /*main page*/
 
 /*h1 */
-h1 {
-  text-align:center;
-
+body{
+  background-color: var(--maincolor);
 }
-
+h1{
+  font-family: var(--bodyfont);
+}
 .my-button {
   display: inline-block;
   margin: 10px; /* space between buttons */
-  background: #b06f97; /* background color */
-  color: #333; /* text color */
+  background: var(--secondcolor); /* background color */
+  color: var(--thirdcolor); /* text color */
   font-size: 1.5em;
-  font-family: ‘Georgia’, serif;
+  font-family: var(--bodyfont);
   font-style: italic;
   border-radius: 50px; /* rounded corners */
   padding: 25px 50px; /* space around text */
@@ -111,6 +112,6 @@ h1 {
   transition: all 0.2s;
 }
 .my-button:hover {
-  background: #666;
+  background: var(--thirdcolor);
   color: #c1e1e0;
 }

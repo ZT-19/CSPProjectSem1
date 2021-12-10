@@ -97,6 +97,9 @@ body{
 h1{
   font-family: var(--bodyfont);
 }
+p{
+  font-family: var(--bodyfont);
+}
 .my-button {
   display: inline-block;
   margin: 10px; /* space between buttons */

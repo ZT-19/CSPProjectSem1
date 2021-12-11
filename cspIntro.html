@@ -19,18 +19,26 @@ AP CSP Practice Portal
 
   <div>
     <img src="https://tinyurl.com/ycktx7h7" alt="HTML5 Icon" width="500">
-  </div>
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-
+ <!-- Input space for # of questions -->
   <div>
+      <form>
+        <label for="questionamt">How many questions would you like?</label>
+        <input type="number" id="questionamt" name="questionamt" min="1" max="10">
+   
+      </form>
+  </div>
+  <!-- Dropdown for wether or not user wants a stopwatch -->
+  <div>
+      <form action="/action_page.php">
+        <label for="cars">Would you like a stop watch?</label>
+        <select name="cars" id="cars">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>    
+        </select>
+        </form>
+  </div>
+
+ <div>
     <a href="cspQuiz.html" target = "_blank" class="my-button" title="Start!" href="#">Start!</a>
   </div>
 </body>

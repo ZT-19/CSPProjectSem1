@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 
 <html>
+<body>
 <head>
     <script src="main.js"></script>
     <link rel='stylesheet' type='text/css' href='general.css'>
     <title>CSP Quiz Start Page</title>
+    <script >
+      function navigate(){
+        window.location.href="cspQuiz.html";
+      }
+    </script>
 </head>
 <style>
   h1 {text-align: center;}
@@ -21,25 +27,18 @@ AP CSP Practice Portal
     <img src="https://tinyurl.com/ycktx7h7" alt="HTML5 Icon" width="500">
  <!-- Input space for # of questions -->
   <div>
-      <form>
-        <label for="questionamt">How many questions would you like?</label>
+      <form action="submit.php" method="post">
+         <label for="questionamt" style ="font-weight: bold;" >How many questions would you like?</label>
+      
         <input type="number" id="questionamt" name="questionamt" min="1" max="10">
-   
-      </form>
-  </div>
-  <!-- Dropdown for wether or not user wants a stopwatch -->
-  <div>
-      <form action="/action_page.php">
-        <label for="cars">Would you like a stop watch?</label>
-        <select name="cars" id="cars">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>    
-        </select>
-        </form>
-  </div>
-
- <div>
-    <a href="cspQuiz.html" target = "_blank" class="my-button" title="Start!" href="#">Start!</a>
+        <br><br>   
+        <script>
+         // document.getElementById("demo").innerHTML = "My First JavaScript";
+        </script>
+        <input type="submit" value="submit">
+         </form>
   </div>
 </body>
 </html>
+
+

@@ -105,7 +105,7 @@ div{
 }
 
 /* buttons */
-.my-button {
+.button {
   display: inline-block;
   margin: 10px; /* space between buttons */
   background: var(--secondcolor); /* background color */
@@ -119,14 +119,14 @@ div{
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.my-button:hover {
+.button:hover {
   background: var(--thirdcolor);
   color: #c1e1e0;
 }
 /* buttons */
 
 /* dropdowns */
-.dropbtn {
+/*.dropbtn {
   background-color: #3498DB;
   color: white;
   padding: 16px;
@@ -164,3 +164,17 @@ div{
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+*/
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers{
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}

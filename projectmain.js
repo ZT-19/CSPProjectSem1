@@ -1,6 +1,6 @@
 function display(){
   //<?php echo "this is php"; ?>
-  alert("welcome to Javatpoint"); 
+  alert("Give us a week and we'll get your paper scored!"); 
 }
 function checkans(selection, ans){
   if (selection==ans){

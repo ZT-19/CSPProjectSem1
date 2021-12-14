@@ -1,6 +1,28 @@
 function display(){
   //<?php echo "this is php"; ?>
-  alert("Give us a week and we'll get your paper scored!"); 
+  //document.querySelector('input[name="que 1"]:checked').value);
+  //alert("Give us a week and get your " + response + " scored!");
+  let response = "x";
+
+  if (document.getElementById('1opt1').checked) {
+    response = "a"; 
+  }
+  else if (document.getElementById('1opt2').checked) {
+    response = "b";
+  }
+  else if (document.getElementById('1opt3').checked) {
+    response = "c";
+  }
+  else if (document.getElementById('1opt4').checked) {
+    response = "d";
+  }
+
+  if (response == document.getElementById("1ans").value) {
+    alert("You got it correct!");
+  }
+  else {
+    alert("Sorry, wrong answer!");
+  }
 }
 function checkans(selection, ans){
   if (selection==ans){

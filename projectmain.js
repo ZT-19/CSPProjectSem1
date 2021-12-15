@@ -2,27 +2,43 @@ function display(){
   //<?php echo "this is php"; ?>
   //document.querySelector('input[name="que 1"]:checked').value);
   //alert("Give us a week and get your " + response + " scored!");
-  let response = "x";
+  var response = "x";
+  var correct = 0;
 
-  if (document.getElementById('1opt1').checked) {
-    response = "a"; 
-  }
-  else if (document.getElementById('1opt2').checked) {
-    response = "b";
-  }
-  else if (document.getElementById('1opt3').checked) {
-    response = "c";
-  }
-  else if (document.getElementById('1opt4').checked) {
-    response = "d";
-  }
+  const num = document.getElementById("num_rows").value;
 
-  if (response == document.getElementById("1ans").value) {
-    alert("You got it correct!");
+  for (i=1; i<=num; i++) {
+    radio1 = i.toString() + "opt1";
+    radio2 = i.toString() + "opt2";
+    radio3 = i.toString() + "opt3";
+    radio4 = i.toString() + "opt4";
+    ans = i.toString() + "ans";
+
+    if (document.getElementById(radio1).checked) {
+      response = "a"; 
+    }
+    else if (document.getElementById(radio2).checked) {
+      response = "b";
+    }
+    else if (document.getElementById(radio3).checked) {
+      response = "c";
+    }
+    else if (document.getElementById('1opt4').checked) {
+      response = "d";
+    }
+
+    
+    if (response == document.getElementById(ans).value) {
+      correct++;
+    }
+    /*
+    else {
+      alert("Sorry, wrong answer!");
+    }
+    */
   }
-  else {
-    alert("Sorry, wrong answer!");
-  }
+  alert("You scored " + correct  + " out of " + num);
+    
 }
 function checkans(selection, ans){
   if (selection==ans){

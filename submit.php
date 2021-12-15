@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 //get data from database
 //$sql = "SELECT id,question,answer FROM qbank  where id in (1,3,4)";
 //$sql = "SELECT id,question,answer FROM qbank  where answer < '$x'";
-$sql = "SELECT id,question,answer FROM qbank  where id <='$x'";
+$sql = "SELECT id,question,answer,opta,optb,optc,optd FROM qbank  where id <='$x'";
 $result = $conn->query($sql);
 
 
@@ -34,9 +34,9 @@ echo "<h2> Hi There! You asked for $x.</h2>";
 echo "<h2> So, here is $x Questions for you to pracice!</h2>";
 
 
-
 //display the result to webpage 
 if ($result->num_rows > 0) {
+  echo " <input type='hidden' name= 'user' id = 'num_rows' value= '$result->num_rows' >";
   // output data of each row
 
   while($row = $result->fetch_assoc()) {
@@ -44,12 +44,38 @@ if ($result->num_rows > 0) {
    #  echo "Questtion: " . $row["id"]. "   -   " .$row["question"]. " -->   Correct Answer is   ->  " . $row["answer"]. "<br>";
    echo "  <br>";
    echo "  <br>";
-   echo " Question: " . $row["id"]. "   -   " .$row["question"].  "<br>";
-   echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt1' value='a'  > Option a <br>" ;
-   echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt2' value='b'> Option b <br>";
-   echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt3' value='c'> Option c <br>";
-   echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt4' value='d'> Option d <br>";
-   echo " <input type ='hidden' name= 'que". $row["id"]."ans' value= '". $row["answer"]."' >";
+
+ 
+   $id = $row["id"];
+   $q = $row["question"];
+   $a = $row["opta"];
+   $b = $row["optb"];
+   $c = $row["optc"];
+   $d = $row["optd"];
+   $ans = $row["answer"];
+
+   echo " Question: " . $id. "   -   " . $q. " <br>";
+   #echo " Answer    " . $id. "   -   " . $ans. " <br>";
+   echo " <input type='radio'   name= 'que " . $id."'    id= '". $id."opt1'   value= 'a'> $a    <br>";
+   echo " <input type='radio'   name= 'que " . $id."'    id= '". $id."opt2'   value= 'b'> $b    <br>";
+   echo " <input type='radio'   name= 'que " . $id."'    id= '". $id."opt3'   value= 'c'> $c    <br>";
+   echo " <input type='radio'   name= 'que " . $id."'    id= '". $id."opt4'   value= 'd'> $d    <br>";
+  
+ 
+  #  echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt1' value= '". $row["opta"]."' >";
+  //  echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt2' value='b'>. $row["opta"];
+  #echo " <input type='hidden' name= 'que ". $row["id"]."' id = '". $row["id"]."ans'  value= '". $row["answer"]."' >";
+  # echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt1' value='a'  > Option a" ;
+  # echo " id: " . $row["id"]. " - Name: "  . $row["answer"].;
+   //echo "<br>";
+  #echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt2' value='b'> Option b <br>";
+  # echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt2' value='b'>. $row["option b"];
+   //echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt3' value='c'> Option c <br>";
+   //echo " <input type='radio' name= 'que ". $row["id"]."' id = '". $row["id"]."opt4' value='d'> Option d <br>";
+   //echo " <input type='hidden' name= 'que". $row["id"]."ans' value= '". $row["answer"]."' >";
+
+   
+   echo " <input type='hidden'    name= 'que ". $id."'    id = '". $id."ans'    value= '". $ans."' >";
    echo "  <br>";
    echo "  <br>";
   }

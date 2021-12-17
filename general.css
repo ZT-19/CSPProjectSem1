@@ -21,7 +21,7 @@
     top: calc(50vh - 50px);
     content: "Loading... please wait";
     transition: ease;
-    text-align: left;
+    text-align: center;
   }
   75%{
     width: 300px;

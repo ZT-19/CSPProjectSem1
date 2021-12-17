@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
-/* main components*/
+/* main colors - components*/
 :root {
 --bodyfont: 'Montserrat';
 --fontsize: 1rem;
@@ -13,7 +13,7 @@
 
 
 
-/*loading code*/
+/*loading code, different text at different times*/
 
 @keyframes fakeloadinganimation{
   0%{
@@ -48,7 +48,7 @@
     text-align: center;
   }
 }
-html::before{
+/* Characterstics of Loading Text*/html::before{
   content: "Loading... please wait";
   height: 100px;
   position: fixed !important;
@@ -72,7 +72,7 @@ html::after{
   height: 100px;
   width: 0px;
   position: fixed !important;
-  margin: 0px;
+  margin: 2px;
   padding: 0px;
     top: calc(150vh - 50px);
   left: calc(50vw - 150px);
@@ -89,7 +89,7 @@ html::after{
 /*loading animation*/ 
 
 /*main page*/
-
+/*colors for different text*/
 
 body{
   background-color: var(--maincolor);
@@ -107,7 +107,7 @@ div{
 /* buttons */
 .button {
   display: inline-block;
-  margin: 10px; /* space between buttons */
+  margin: 15px; /* space between buttons */
   background: var(--secondcolor); /* background color */
   color: var(--thirdcolor); /* text color */
   font-size: 1.5em;
@@ -115,11 +115,11 @@ div{
   font-style: italic;
   border-radius: 50px; /* rounded corners */
   padding: 25px 50px; /* space around text */
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
-.button:hover {
+/*Hover over button, change color*/.button:hover {
   background: var(--thirdcolor);
   color: #c1e1e0;
 }
@@ -165,7 +165,7 @@ div{
 
 .show {display: block;}
 */
-.question{
+/* VARUN.question{
   font-size: 30px;
   /*text-align: center;*/
   /*position: sticky;*/
@@ -186,8 +186,13 @@ div{
 
 
 /* CSS Navigation Bar */
+<<<<<<< HEAD
 /*Centers "button" in the middle of the page
 body {
+=======
+/*Centers "button" in the middle of the page*/
+/*body {
+>>>>>>> bfda73c8ff8d1cea78f297ae3d9026b62ace7b5d
   height: 100%;
   width: 100%;
   display: flex;

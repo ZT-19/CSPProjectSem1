@@ -167,26 +167,26 @@ div{
 */
 .question{
   font-size: 30px;
-  text-align: center;
-  position: sticky;
+  /*text-align: center;*/
+  /*position: sticky;*/
   margin-bottom: 10px;
 }
 .answers{
   margin-bottom: 20px;
   text-align: center;
-  position: sticky;
+  /*position: sticky;*/
   display: inline-block;
 }
 .answers label{
   display: block;
-  text-align: center;
-  position: sticky;
+ /* text-align: center;
+  position: sticky;*/
   margin-bottom: 10px;
 }
 
 
 /* CSS Navigation Bar */
-/*Centers "button" in the middle of the page*/
+/*Centers "button" in the middle of the page
 body {
   height: 100%;
   width: 100%;
@@ -228,3 +228,4 @@ body {
 }
 
 
+*/

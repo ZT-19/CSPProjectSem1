@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
-/* main components*/
+/* main colors - components*/
 :root {
 --bodyfont: 'Montserrat';
 --fontsize: 1rem;
@@ -13,7 +13,7 @@
 
 
 
-/*loading code*/
+/*loading code, different text at different times*/
 
 @keyframes fakeloadinganimation{
   0%{
@@ -48,7 +48,7 @@
     text-align: center;
   }
 }
-html::before{
+/* Characterstics of Loading Text*/html::before{
   content: "Loading... please wait";
   height: 100px;
   position: fixed !important;
@@ -89,7 +89,7 @@ html::after{
 /*loading animation*/ 
 
 /*main page*/
-
+/*colors for different text*/
 
 body{
   background-color: var(--maincolor);
@@ -119,7 +119,7 @@ div{
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-.button:hover {
+/*Hover over button, change color*/.button:hover {
   background: var(--thirdcolor);
   color: #c1e1e0;
 }

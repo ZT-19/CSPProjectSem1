@@ -169,30 +169,28 @@ div{
   font-size: 30px;
   /*text-align: center;*/
   /*position: sticky;*/
-  margin-bottom: 10px;
-}
-.answers{
+  /*margin-bottom: 10px;
+} */
+/*.answers{
   margin-bottom: 20px;
   text-align: center;
-  /*position: sticky;*/
+  position: sticky;
   display: inline-block;
 }
-.answers label{
+
+/*.answers label{
   display: block;
- /* text-align: center;
-  position: sticky;*/
+ text-align: center;
+  position: sticky;
   margin-bottom: 10px;
 }
 
 
 /* CSS Navigation Bar */
-<<<<<<< HEAD
 /*Centers "button" in the middle of the page
 body {
-=======
 /*Centers "button" in the middle of the page*/
 /*body {
->>>>>>> bfda73c8ff8d1cea78f297ae3d9026b62ace7b5d
   height: 100%;
   width: 100%;
   display: flex;

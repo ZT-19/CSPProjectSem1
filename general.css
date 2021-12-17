@@ -77,7 +77,7 @@ html::after{
     top: calc(150vh - 50px);
   left: calc(50vw - 150px);
   background-color: #ffeddf;
-  color:#01295f !important;
+  color:#AD343E !important;
   line-height: 100px;
   z-index: 1000000001 !important;
   white-space: nowrap;

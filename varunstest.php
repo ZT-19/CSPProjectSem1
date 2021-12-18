@@ -30,7 +30,8 @@ $result = $conn->query($sql);
 #echo "<h2> Hi There! You asked for $x. So, here is $x Questions for you to pracice!</h2>";
 echo "  <br>";
 echo "  <br>";
-echo "<h2> Here are your $x questions!</h2>";
+echo "<h2> Hi There! You asked for $x.</h2>";
+echo "<h2> So, here is $x Questions for you to pracice!</h2>";
 
 
 //display the result to webpage 
@@ -78,10 +79,10 @@ if ($result->num_rows > 0) {
    echo "  <br>";
    echo "  <br>";
   }
-echo " <input type= 'button' value='Submit' onclick='display()'>";
+echo " <input type= 'button' value='Submit' onclick='window.open('cspResults.html', 'width=400,height=200''>";
 echo "  <br>";
 echo "  <br>";
-echo "<h2>Click submit when you are done!</h2>";
+echo "<h2>  We hope these $x questions show up in the test!  Good Luck!!!.</h2>";
 
 #} else {
  } else {

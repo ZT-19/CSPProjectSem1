@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 //get data from database
 //$sql = "SELECT id,question,answer FROM qbank  where id in (1,3,4)";
 //$sql = "SELECT id,question,answer FROM qbank  where answer < '$x'";
-$sql = "SELECT id,question,answer,opta,optb,optc,optd FROM qbankcsp  where id <='$x'";
+$sql = "SELECT id,question,answer,opta,optb,optc,optd FROM qbankush  where id <='$x'";
 $result = $conn->query($sql);
 
 

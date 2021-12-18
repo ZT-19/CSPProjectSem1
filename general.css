@@ -7,8 +7,8 @@
 --bodyfont: 'Montserrat';
 --fontsize: 1rem;
 --maincolor: #ffeddf; 
---secondcolor: #d17171;
---thirdcolor: #0f0f0f;
+--secondcolor: #4e77b6;
+--thirdcolor: #01295f;
 }
 
 
@@ -21,7 +21,7 @@
     top: calc(50vh - 50px);
     content: "Loading... please wait";
     transition: ease;
-    text-align: center;
+    text-align: left;
   }
   75%{
     width: 300px;
@@ -77,7 +77,7 @@ html::after{
     top: calc(150vh - 50px);
   left: calc(50vw - 150px);
   background-color: #ffeddf;
-  color:#AD343E !important;
+  color:#01295f !important;
   line-height: 100px;
   z-index: 1000000001 !important;
   white-space: nowrap;
@@ -169,19 +169,18 @@ div{
   font-size: 30px;
   /*text-align: center;*/
   /*position: sticky;*/
-  /*margin-bottom: 10px;
-} */
-/*.answers{
+  /*margin-bottom: 10px;*
+}*/
+.answers{
   margin-bottom: 20px;
   text-align: center;
-  position: sticky;
+  /*position: sticky;*/
   display: inline-block;
 }
-
-/*.answers label{
+.answers label{
   display: block;
- text-align: center;
-  position: sticky;
+ /* text-align: center;
+  position: sticky;*/
   margin-bottom: 10px;
 }
 

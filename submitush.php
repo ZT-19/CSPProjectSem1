@@ -28,12 +28,10 @@ $result = $conn->query($sql);
 
 //display a header
 #echo "<h2> Hi There! You asked for $x. So, here is $x Questions for you to pracice!</h2>";
-echo "  <br>";
-echo "  <br>";
-echo "<h2> Here are your $x questions!</h2>";
-
+echo "<h1>  APUSH Quiz Portal</h1>";
 
 //display the result to webpage 
+//if ($result->num_rows > 0) {
 if ($result->num_rows > 0) {
   echo " <input type='hidden' name= 'user' id = 'num_rows' value= '$result->num_rows' >";
   // output data of each row

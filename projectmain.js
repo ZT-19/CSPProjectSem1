@@ -40,15 +40,6 @@ function display(){
   alert("You scored " + correct  + " out of " + num);
     
 }
-function checkans(selection, ans){
-  if (selection==ans){
-    alert ('correct');
-  }
-  else{
-    alert ('wrong');
-  }
-
-}
 /*
 (function(){
   // Functions

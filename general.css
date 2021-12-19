@@ -96,6 +96,10 @@ body{
 }
 h1{
   font-family: var(--bodyfont);
+  text-align: center;
+}
+h2{
+  font-family: var(--bodyfont);
 }
 p{
   font-family: var(--bodyfont);

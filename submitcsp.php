@@ -28,9 +28,7 @@ $result = $conn->query($sql);
 
 //display a header
 #echo "<h2> Hi There! You asked for $x. So, here is $x Questions for you to pracice!</h2>";
-echo "  <br>";
-echo "  <br>";
-echo "<h2> Here are your $x questions!</h2>";
+echo "<h1>  APCSP Quiz Portal</h1>";
 
 
 //display the result to webpage 

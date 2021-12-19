@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2021 at 06:40 AM
+-- Generation Time: Dec 19, 2021 at 03:02 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -89,17 +89,17 @@ CREATE TABLE `qbankush` (
   `id` int(11) NOT NULL,
   `question` varchar(800) NOT NULL,
   `answer` varchar(300) NOT NULL,
-  `option a` varchar(300) NOT NULL,
-  `option b` varchar(300) NOT NULL,
-  `option c` varchar(300) NOT NULL,
-  `option d` varchar(300) NOT NULL
+  `opta` varchar(300) NOT NULL,
+  `optb` varchar(300) NOT NULL,
+  `optc` varchar(300) NOT NULL,
+  `optd` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `qbankush`
 --
 
-INSERT INTO `qbankush` (`id`, `question`, `answer`, `option a`, `option b`, `option c`, `option d`) VALUES
+INSERT INTO `qbankush` (`id`, `question`, `answer`, `opta`, `optb`, `optc`, `optd`) VALUES
 (1, 'The cotton gin’s impact on society is analogous to the impact of all of the following innovations EXCEPT', 'b', 'the assembly line', 'the telegraph', 'the sewing machine', 'the application of steam power to factories'),
 (2, 'Which of the following was a direct effect of the invention of the cotton gin?', 'c', 'The invention of the steel plow', 'The spread of the plantation system into Northern states', 'The development of the Lowell factory system in New England', 'The introduction of the factory system in the South'),
 (3, 'In the 1840s and 1850s, the views expressed by Calhoun most directly contributed to ', 'b', 'the United States acquisition of new territory in the West', 'increased sectional divisions between the North and the South', 'the development of sharecropping and tenant farming in the South', 'the rise of voluntary organizations to promote religious reform');

@@ -9,6 +9,7 @@
 --maincolor: #ffeddf; 
 --secondcolor: #4e77b6;
 --thirdcolor: #01295f;
+--fourthcolor: #ffffff;
 }
 
 
@@ -110,23 +111,99 @@ div{
 
 /* buttons */
 .button {
+  border: solid;
+  border-color: var(--fourthcolor);
+  background-image: url("https://mrmoylan.com/assets/img/apcsp.jpg");
+  background-size: 100%;
   display: inline-block;
-  margin: 15px; /* space between buttons */
-  background: var(--secondcolor); /* background color */
+  margin: 30px; /* space between buttons */
+  /* background: var(--secondcolor); /* background color */
   color: var(--thirdcolor); /* text color */
   font-size: 1.5em;
   font-family: var(--bodyfont);
   font-style: italic;
-  border-radius: 50px; /* rounded corners */
-  padding: 25px 50px; /* space around text */
+  border-radius: 25px; /* rounded corners */
+  padding: 100px 200px; /* space around text */
   -moz-transition: all 0.1s;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/*Hover over button, change color*/.button:hover {
-  background: var(--thirdcolor);
-  color: #c1e1e0;
+/*Hover over button, change color*/
+.button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.2);
 }
+
+.button1 {
+  border: solid;
+  border-color: var(--fourthcolor);
+  background-image: url("https://i.ytimg.com/vi/ZKiStP1IQaE/maxresdefault.jpg");
+  background-size: 100%;
+  display: inline-block;
+  margin: 30px; /* space between buttons */
+  /* background: var(--secondcolor); /* background color */
+  color: var(--thirdcolor); /* text color */
+  font-size: 1.5em;
+  font-family: var(--bodyfont);
+  font-style: italic;
+  border-radius: 25px; /* rounded corners */
+  padding: 100px 200px; /* space around text */
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/*Hover over button, change color*/
+.button1:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.2);
+}
+
+.button2 {
+  border: solid;
+  border-color: var(--fourthcolor);
+  background-image: url("https://tinyurl.com/45ebsy8p");
+  background-size: 100%;
+  display: inline-block;
+  margin: 30px; /* space between buttons */
+  /* background: var(--secondcolor); /* background color */
+  color: var(--thirdcolor); /* text color */
+  font-size: 1.5em;
+  font-family: var(--bodyfont);
+  font-style: italic;
+  border-radius: 25px; /* rounded corners */
+  padding: 100px 200px; /* space around text */
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/*Hover over button, change color*/
+.button2:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.2);
+}
+
+.button3 {
+  border: solid;
+  border-color: var(--fourthcolor);
+  background-image: url("https://i.ytimg.com/vi/rx9KEMcT16Q/maxresdefault.jpg");
+  background-size: 100%;
+  display: inline-block;
+  margin: 30px; /* space between buttons */
+  /* background: var(--secondcolor); /* background color */
+  color: var(--thirdcolor); /* text color */
+  font-size: 1.5em;
+  font-family: var(--bodyfont);
+  font-style: italic;
+  border-radius: 25px; /* rounded corners */
+  padding: 100px 200px; /* space around text */
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/*Hover over button, change color*/
+.button3:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.2);
 /* buttons */
 
 /* dropdowns */

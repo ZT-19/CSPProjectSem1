@@ -5,18 +5,23 @@
 <head>
     <script src="projectmain.js"></script>
     <link rel='stylesheet' type='text/css' href='general.css'>
-    <title>APES Quiz Start Page</title>
-    <!--<script >
-      function navigate(){
-        window.location.href="cspQuiz.html";
-      }
-    </script>-->
+    <title>Environmental Science Quiz Start Page</title>
 </head>
 <style>
+  h1 {text-align: center;}
+  body {text-align: center;} 
+  div {text-align: center;
+      font-family: cursive;}
 
-body {text-align: center;} 
-div {text-align: center;}
-input[type=submit] {
+  body {
+    background-image: url("https://tinyurl.com/8p6av3r9");
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  input[type=submit] {
     background-color: blue;
     border: none;
     color: white;
@@ -24,19 +29,18 @@ input[type=submit] {
     text-decoration: none;
    margin: 4px 2px;
   }
-
 </style>
 <h1 style="color: azure;">
 APES Practice Portal
 </h1>
 
-<body id="es">
+<body>
 
-  <div style="color: black; font-weight: bold;">
+  <div style="color: black;">
     <img src="https://tinyurl.com/yckj6rxm" alt="HTML5 Icon" width="500">
  <!-- Input space for # of questions -->
-  <div>
-      <form action="submites.php" method="post">
+
+   <form action="submitbio.php" method="post">
          <label for="questionamt" style ="font-weight: bold;" >How many questions would you like?</label>
       
         <input type="number" id="questionamt" name="questionamt" min="1" max="10">
@@ -49,5 +53,3 @@ APES Practice Portal
   </div>
 </body>
 </html>
-
-

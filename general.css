@@ -180,6 +180,7 @@ div{
   border-color: var(--fourthcolor);
   background-image: url("https://tinyurl.com/45ebsy8p");
   background-size: 100%;
+  /*p.ridge {border-style: ridge;}*/
   display: inline-block;
   margin: 30px; /* space between buttons */
   /* background: var(--secondcolor); /* background color */

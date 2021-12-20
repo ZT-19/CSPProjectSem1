@@ -76,7 +76,7 @@ if ($result->num_rows > 0) {
    echo "  <br>";
    echo "  <br>";
   }
-echo " <input type= 'submit' value='Submit Quiz' onclick='grade()'>";
+echo " <input type= 'submit' value='Submit Quiz' onclick='display()'>";
 echo "<br>";
 echo "<h2>Click submit when you are done!</h2>";
 

@@ -108,6 +108,7 @@ body{
 h1{
   font-family: var(--bodyfont);
   text-align: center;
+  /*text-shadow: 1.3px 1.3px; */
 }
 h2{
   font-family: var(--bodyfont);
@@ -140,7 +141,7 @@ div{
   font-family: var(--bodyfont);
   font-style: italic;
   border-radius: 25px; /* rounded corners */
-  padding: 100px 200px; /* space around text */
+  padding: 75px 200px; /* space around text */
   -moz-transition: all 0.1s;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
@@ -180,6 +181,7 @@ div{
   border-color: var(--fourthcolor);
   background-image: url("https://tinyurl.com/45ebsy8p");
   background-size: 100%;
+  /*p.ridge {border-style: ridge;}*/
   display: inline-block;
   margin: 30px; /* space between buttons */
   /* background: var(--secondcolor); /* background color */
@@ -325,6 +327,39 @@ body {
 .answers:hover {
   background-color: #223094;
 }
+
+
+*/
+
+/*
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="https://apstudents.collegeboard.org/courses/ap-united-states-history">APUSH</a></li>
+  <li><a href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/course">CSP</a></li>
+  <li><a href="https://apstudents.collegeboard.org/courses/ap-environmental-science">APES</a></li>
+  <li><a href="https://apstudents.collegeboard.org/courses/ap-biology">Bio</a></li>
+</ul>
+</body>
+</html>
 
 
 */

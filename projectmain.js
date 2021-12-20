@@ -1,4 +1,4 @@
-function grade(){
+function display(){
   //<?php echo "this is php"; ?>
   //document.querySelector('input[name="que 1"]:checked').value);
   //alert("Give us a week and get your " + response + " scored!");

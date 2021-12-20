@@ -72,7 +72,7 @@ html::before{
   width: 300px !important;
   background-color: var(--maincolor);
   color: var(--maincolor) !important;
-  box-shadow: 0px 0px 0px 5px rgb(17, 17, 17), 0px 50vw 0px calc(50vw + 50vh - 50px) #e7d10b, 0px 0px 0px 5px white !important; 
+  box-shadow: 0px 0px 0px 5px rgb(17, 17, 17), 0px 50vw 0px calc(50vw + 50vh - 50px) #ee0000, 0px 0px 0px 5px white !important; 
 
 }
 
@@ -93,7 +93,7 @@ html::after{
   overflow: hidden !important;
 
   width: 0px;
-  background-color: #86c53d;
+  background-color: #050505;
   color:#01295f !important;
 }
 

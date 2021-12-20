@@ -108,7 +108,7 @@ body{
 h1{
   font-family: var(--bodyfont);
   text-align: center;
-  /*text-shadow: 1px 1px; */
+  /*text-shadow: 1.3px 1.3px; */
 }
 h2{
   font-family: var(--bodyfont);

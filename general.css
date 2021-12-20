@@ -140,7 +140,7 @@ div{
   font-family: var(--bodyfont);
   font-style: italic;
   border-radius: 25px; /* rounded corners */
-  padding: 100px 200px; /* space around text */
+  padding: 75px 200px; /* space around text */
   -moz-transition: all 0.1s;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;

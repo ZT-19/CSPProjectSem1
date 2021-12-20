@@ -76,9 +76,8 @@ if ($result->num_rows > 0) {
    echo "  <br>";
    echo "  <br>";
   }
-echo " <input type= 'button' value='Submit' onclick='display()'>";
-echo "  <br>";
-echo "  <br>";
+echo " <input type= 'submit' value='Submit Quiz' onclick='grade()'>";
+echo "<br>";
 echo "<h2>Click submit when you are done!</h2>";
 
 #} else {

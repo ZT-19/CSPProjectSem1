@@ -64,7 +64,7 @@ html::before{
   top: calc(150vh - 50px);
   left: calc(50vw - 150px);
   white-space: nowrap;
-  animation: fakeloadinganimation 5s ease !important;
+  animation: fakeloadinganimation 2.5s ease !important;
 
   z-index: 1000000000 !important;
   display: block !important;
@@ -87,7 +87,7 @@ html::after{
   top: calc(150vh - 50px);
   left: calc(50vw - 150px);
   white-space: nowrap;
-  animation: fakeloadinganimation 5s ease !important;
+  animation: fakeloadinganimation 2.5s ease !important;
 
   z-index: 1000000001 !important;
   overflow: hidden !important;
